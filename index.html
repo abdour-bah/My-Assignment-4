@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAH'S COMPUTERS SHOP</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+    <!--HEADER AND NVIGATION-->
+    <header>
+        <div class="logo">BAH'S COMPUTERS</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+
+            </ul>
+        </nav>
+        <!--Hamburger icon-->
+        <div class="menu-toggle">☰</div> 
+    </header>
+    <!--THE HERO SECTION FOR SIGNING UP & SHOPING-->
+    <section id="hero">
+        <h1>Welcome To Our Affordable & Quality Computers</h1>
+        <p>We sell high performance and quality computers at affordable prices</p>
+        <a href="#signup" class="cta-button">Shop Now</a>
+        <img src="hero-image.webp" alt="Laptop Image">
+
+    </section>
+
+    <!--FEATURES SECTION-->
+    <section id="features">
+        <h2>some features of our products</h2>
+            <ul>
+                <li>High SSD storage</li>
+                <li>Quality batteries that last at least for 4hrs</li>
+                <li>Laptops with different sizes and colors</li>
+                <li>We have different brands such as DEll, acer etc</li>
+            </ul>
+                <div class="feature-cards">
+                    <img src="images/batteries.jpg" alt="Laptop Batteries">
+                    <img src="images/hard-drive.webp" alt="External Hard-drives">
+                    <img src="images/keyboards.webp" alt="Keyboards">
+                    <img src="images/wireless-mouse.avif" alt="Mouse">
+                    <img src="images/mouse-pads.png" alt="Mouse Pads">
+                    <img src="images/desk-top.png" alt="Desktops">
+                    <img src="images/laptops.jpg" alt="Laptops">
+
+                </div>
+            
+        </div>
+
+    </section>
+
+     <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <h4>- Dawda Nenegalleh Jallow</h4>
+        <p>"Amazing quality computer products and support!"</p>
+        
+      </div>
+      <div class="testimonial-card">
+        <h4>- Mamudou Sankareh</h4>
+        <p>"Affordable and super fast computers."</p>
+       
+      </div>
+    </div>
+  </section>
+
+   <!-- SIGN-UP SECTION -->
+   <section id="signup">
+    <h2>Stay Updated!</h2>
+    <p>Join our mailing list for exclusive offers and updates.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <button type="submit">Join Now</button>
+    </form>
+  </section>
+
+   <!-- FOOTER -->
+   <footer>
+    <p>&copy; 2025 BAH'S COMPUTERS ENTERPRISE. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const header = document.querySelector("header");
+    const toggle = document.querySelector(".menu-toggle");
+  
+    toggle.addEventListener("click", () => {
+      header.classList.toggle("active");
+    });
+  </script>   
+</body>
+</html>
